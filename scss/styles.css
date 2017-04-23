@@ -1,0 +1,69 @@
+/* line 2, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+html {
+  background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+  background-size: cover;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px; }
+
+/* line 10, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center; }
+
+/* line 19, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2); }
+
+/* line 34, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  /* account for the height of the clock hands */ }
+
+/* line 41, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.center {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+  right: 48%;
+  transform-origin: 50%; }
+
+/* line 53, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.hand {
+  width: 50%;
+  height: 3px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.41, 1.51, 0.63, 1.24); }
+
+/* line 66, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.min-hand {
+  height: 6px; }
+
+/* line 70, /Users/laurakneeshaw/Desktop/lvl-2/scss/styles.scss */
+.hour-hand {
+  height: 8px; }
+
+/*# sourceMappingURL=styles.css.map */
